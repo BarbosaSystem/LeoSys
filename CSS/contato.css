@@ -1,0 +1,92 @@
+header{
+    margin: 0 0 25px;
+    height: 335px;
+}
+
+h1{
+    margin: 110px auto 0 auto !important;
+}
+.contato form {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.contato form:before, .contato form:after {
+  content: " ";
+  display: table;
+}
+.contato form:after {
+  clear: both;
+}
+@media (min-width: 768px) {
+  .contato form {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+@media (min-width: 768px) {
+  .contato form {
+    margin-left: 16.66666667%;
+  }
+}
+.contato form .cols {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.contato form .cols:before, .contato form .cols:after {
+  content: " ";
+  display: table;
+}
+.contato form .cols:after {
+  clear: both;
+}
+.contato form .col {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .contato form .col {
+    float: left;
+    width: 50%;
+  }
+}
+.contato form input,
+.contato form select,
+.contato form textarea {
+  width: 100%;
+  border: 2px solid gray;
+  padding: 7px;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.contato form input:hover,
+.contato form select:hover,
+.contato form textarea:hover {
+  border-color: #00434d;
+}
+.contato form input:focus,
+.contato form select:focus,
+.contato form textarea:focus {
+  border-color: #00434d;
+}
+.contato form select {
+  height: 37px;
+}
+.contato form button {
+  background-color: transparent;
+  display: table;
+  margin: 0 auto;
+}
+.contato form .bg-success,
+.contato form .bg-danger {
+  padding: 7px;
+}
+
+p.bg-success, p.bg-danger{
+    color: black;
+}

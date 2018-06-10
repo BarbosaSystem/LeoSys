@@ -1,0 +1,99 @@
+header {
+  background-image: url(../images/Slide-Topo.png);
+  background-position: top center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-size: cover;
+  /*background-position-y: -100px;*/
+  height: 590px;
+  position: relative;
+}
+
+header:after {
+  content: "";
+    position: absolute;
+    bottom: 0;
+  display: block;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(90deg,#00434d, #000);
+}
+
+header .logo {
+  float: left;
+  width: 170px;
+  height: 36px;
+}
+
+header .hamburguer{
+    float: left;
+    width: 28px;
+    margin-right: 20px;
+}
+header .links {
+  float: right;
+}
+
+header .logo a.hambur i{
+    color: white;
+    margin: 0 10px 0 0;
+    font-size: 3rem;
+}
+
+header .logo, .links, .hamburguer{
+    margin: 20px 0 0;
+}
+
+header .links nav,
+header .links .social {
+  display: inline-block;
+}
+
+header .links nav ul li {
+  display: inline-block;
+  margin: 0 20px 0 0;
+  
+}
+
+ul.social{
+    padding-left: 0;
+}
+
+
+header .links nav ul li a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+header .links .social li {
+  display: inline-block;
+  margin: 0 5px 0 0;
+}
+header .links .social li a {
+  color: white;
+  display: block;
+  border: 1px solid white;
+  padding: 4px;
+  width: 25px;
+  height: 25px;
+  line-height: 16px;
+  text-align: center;
+  border-radius: 120px;
+}
+
+h1 {
+  clear: both;
+  margin: 150px auto 0 auto !important;
+  border: 3px solid white;
+  padding: 20px;
+  display: table;
+  text-transform: uppercase;
+}
+
+h1, p {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+

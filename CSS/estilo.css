@@ -1,0 +1,105 @@
+@media screen and (max-width: 992px) {
+    header .links nav {
+        display: none;
+    }
+    header h1{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 441px) {
+    header h1 {
+        padding: 0;
+        font-size: 15px;
+    }
+    
+    h1 {
+      clear: both;
+      margin: 0px auto 0 auto !important;
+      border: 3px solid white;
+      padding: 20px;
+      display: table;
+      text-transform: uppercase;
+    }
+    
+    .textos p{
+        color: black;
+        text-align: justify;
+        font-size: 15px;
+    }
+    .logo img{
+        height: 20px;
+        width: auto;
+    }
+    
+    section.sobre .itens [class^="icone-"] {
+      width: 40px;
+      height: 40px;
+      background-color: #00434d;
+        color: white;
+      border-radius: 60px;
+      text-align: center;
+        line-height: 80px;
+        font-size: 20px;
+    }
+    
+}
+/* .itens{
+   border: 1px solid white;
+    bottom: 0;
+    margin: 60px 0;
+    text-align: center;
+}
+.itens img{
+    border-radius: 500px;
+    width: 172px;
+    height: 172px;
+    background-color: transparent;
+}*/
+
+
+/*header .logo{
+    float: left;
+    width: 121px;
+    height: 36px;
+}
+header{
+  overflow: auto;
+    background-image: url(images/Slide-Topo.png);
+    background-position: top center;
+    background-attachment: fixed;
+}
+header .links{
+    float: right;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    text-transform: uppercase;
+/*    color: white;
+}
+
+header .links .social li{
+    display: inline-block;
+}
+header .links .social li a{
+    color: white;
+}
+
+header h1, header p {
+  color: white;
+}
+
+header .links nav ul li{
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+/*.logo-rodape{
+    font-family: ﻿Arial-BoldItalicMT, ﻿AdobeInvisFont, ﻿Tahoma;
+    font-size: 200pt;
+    color: rgba(0, 67, 77, 255);
+    text-align: center;
+}*/

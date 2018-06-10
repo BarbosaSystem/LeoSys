@@ -1,0 +1,35 @@
+body{
+ font-family: "Open Sans"; 
+}
+a{
+    text-decoration: none;
+}
+
+header{
+    display: block;
+}
+
+li{
+    list-style: none;
+}
+
+@media screen and (max-width: 992px) {
+    header .links nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 441px) {
+    header h1 {
+        font-size: 20px;
+    }
+    .textos p{
+        color: black;
+        text-align: justify;
+        font-size: 15px;
+    }
+    .logo img{
+        height: 20px;
+        width: auto;
+    }
+}

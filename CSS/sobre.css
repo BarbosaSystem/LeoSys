@@ -1,0 +1,190 @@
+header{
+    height: 50vh;
+    margin: 0 0 25px;
+}
+
+section.sobre .itens {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 50px 0;
+}
+
+section.sobre .itens [class^="icone-"] {
+  width: 80px;
+  height: 80px;
+  background-color: #00434d;
+    color: white;
+  border-radius: 120px;
+  text-align: center;
+    line-height: 80px;
+    font-size: 20px;
+}
+
+section.sobre .textos{
+    text-align: center;
+}
+
+.textos p{
+    color: black;
+    text-align: justify;
+    font-size: 20px;
+}
+.textos .botao {
+    display: table;
+  margin: 30px auto;
+}
+.itens img{
+    border-radius: 200px;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    background-color: transparent;
+}
+
+section.sobre .itens .icone-lapis {
+  -webkit-order: 1;
+}
+section.sobre .itens .icone-codigo {
+  -webkit-order: 3;
+}
+section.sobre .itens .imagem {
+  -webkit-order: 2;
+}
+
+
+.habilidades {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 40px;
+}
+.habilidades:before, .habilidades:after {
+  content: " ";
+  display: table;
+}
+.habilidades:after {
+  clear: both;
+}
+@media (min-width: 768px) {
+  .habilidades {
+    float: left;
+    width: 83.33333333%;
+  }
+}
+@media (min-width: 768px) {
+  .habilidades {
+    margin-left: 8.33333333%;
+  }
+}
+
+@media screen and (max-width: 441px){
+    .itens img{
+        border-radius: 100px;
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        background-color: transparent;
+    }
+    section.sobre .itens [class^="icone-"] {
+      width: 40px;
+      height: 40px;
+      background-color: #00434d;
+        color: white;
+      border-radius: 60px;
+      text-align: center;
+        line-height: 40px;
+        font-size: 10px;
+    }
+    .textos p{
+        color: black;
+        text-align: justify;
+        font-size: 15px;
+    }
+    
+}
+
+.habilidades li {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .habilidades li {
+    float: left;
+    width: 50%;
+  }
+}
+.habilidades li h2 {
+  font-size: 20px;
+  margin: 40px 0 10px;
+}
+.habilidades li h2 i {
+  font-size: 38px !important;
+}
+.habilidades li h2 i .fa-html5, .html5 {
+  color: #e67e22;
+}
+.habilidades li h2 i .fa-css3, .css3 {
+  color: #2980b9;
+}
+.habilidades li h2 i.fa-windows, .aspnet {
+  color: #8e44ad;
+}
+.habilidades li h2 i.fa-js, js{
+    color: black;
+}
+
+.habilidades li.habilidade-0 .barra span {
+  width: 0%;
+}
+.habilidades li.habilidade-1 .barra span {
+  width: 10%;
+}
+.habilidades li.habilidade-2 .barra span {
+  width: 20%;
+}
+.habilidades li.habilidade-3 .barra span {
+  width: 30%;
+}
+.habilidades li.habilidade-4 .barra span {
+  width: 40%;
+}
+.habilidades li.habilidade-5 .barra span {
+  width: 50%;
+}
+.habilidades li.habilidade-6 .barra span {
+  width: 60%;
+}
+.habilidades li.habilidade-7 .barra span {
+  width: 70%;
+}
+.habilidades li.habilidade-8 .barra span {
+  width: 80%;
+}
+.habilidades li.habilidade-9 .barra span {
+  width: 90%;
+}
+.habilidades li.habilidade-10 .barra span {
+  width: 100%;
+}
+.habilidades .barra {
+  background-color: #ecf0f1;
+  border-radius: 120px;
+  display: block;
+  width: 100%;
+  height: 17px;
+  margin: 10px 0;
+}
+.habilidades .barra span {
+  display: block;
+  height: 100%;
+  border-radius: 120px;
+  background: linear-gradient(90deg, #2980b9, #2ecc71);
+}

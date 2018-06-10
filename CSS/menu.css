@@ -1,0 +1,48 @@
+body{
+    position: relative;
+}
+.menu-responsivo {
+  position: fixed;
+  width: 150px;
+  height: 100%;
+  left:  -150px;
+  top: 0;
+  background: linear-gradient(90deg, #00434d, #000);
+  transition: .6s;
+}
+
+.menu-responsivo ul{
+    padding-left: 0;
+}
+
+.menu-responsivo.ativo{
+    transition: .6s;
+    left: 0;
+}
+
+.menu-responsivo ul li {
+  border-bottom: 1px solid #fff;
+}
+.menu-responsivo ul li a {
+  padding: 7px;
+  display: block;
+  color: #fff;
+}
+.menu-responsivo ul li a:hover, .menu-responsivo ul li a:focus {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.layout{
+    transition: .6s;
+}
+.layout.ativo {
+  transition: .6s;
+  padding-left: 150px;
+}
+
+.menu-responsivo .logo{
+    text-align: center;
+    padding: 20px 0 25px 0px;
+}
+.menu-responsivo .logo:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+}

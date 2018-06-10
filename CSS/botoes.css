@@ -1,0 +1,24 @@
+.botao {
+  border: 5px solid #00434d;
+  color: black;
+  text-transform: uppercase;
+  font-weight: black;
+}
+.botao:hover, .botao:focus {
+  border-color: #00434d;
+  color: #00434d;
+}
+.pequeno {
+  padding: 7px;
+  font-size: 14px;
+}
+
+.medio {
+  padding: 9px;
+  font-size: 16px;
+}
+
+.grande {
+  padding: 11px;
+  font-size: 18px;
+}

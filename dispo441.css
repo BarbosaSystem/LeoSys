@@ -1,0 +1,58 @@
+@media screen and (max-width: 441px) {
+    header h1 {
+        font-size: 15px;
+    }
+    
+    h1 {
+      clear: both;
+      margin: 135px auto 0 auto !important;*/
+      border: 3px solid white;
+      padding: 20px;
+      display: table;
+      text-transform: uppercase;
+    }
+    
+    .textos p{
+        color: black;
+        text-align: justify;
+        font-size: 15px;
+    }
+    .logo img{
+        height: 20px;
+        width: auto;
+    }
+    
+    section.sobre .itens [class^="icone-"] {
+      width: 40px;
+      height: 40px;
+      background-color: #00434d;
+        color: white;
+      border-radius: 60px;
+      text-align: center;
+        line-height: 40px;
+        font-size: 15px;
+    }
+    
+}
+
+@media (min-width: 441px) and (max-width: 992px) {
+    header{
+        height: 100vh;
+    }
+    header .links nav {
+        display: none;
+    }
+     h1 {
+      clear: both;
+      margin-bottom: 50% !important;
+      border: 3px solid white;
+      padding: 20px;
+      font-size: 2rem;
+      display: table;
+      text-transform: uppercase;
+    }
+    
+    p.espaco{
+        display: none;
+    }
+}
