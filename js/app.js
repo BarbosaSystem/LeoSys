@@ -19,13 +19,13 @@ linksParent.on('click', 'li', function(){
     items.eq(i).addClass('ativo').siblings().removeClass('ativo');
 });
 
-linksParentRespons.on('click', 'li', function(){
+linksParentRespons.on('click', 'div', function(){
     var t = $(this);
     var i = t.index();
     t.addClass('ativo').siblings().removeClass('ativo');
-    items.eq(i).addClass('ativo').siblings().removeClass('ativo');
+    items.eq(i-1).addClass('ativo').siblings().removeClass('ativo');
     
-    $('#menu-1').prop('checked', false);
+    $('.drop_input').prop('checked', false);
 });
 
 
