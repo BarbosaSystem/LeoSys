@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACI,UAAE;EACE,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,8BAA8B;EACtC,MAAM,EAAE,eAAe;EACvB,OAAO,EAAE,IAAI;EACb,OAAO,EAAE,KAAK;EACd,cAAc,EAAE,SAAS;EACzB,KAAK,EAAE,KAAK",
+"sources": ["../sass/tipografia.sass"],
+"names": [],
+"file": "tipografia.css"
+}

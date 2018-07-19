@@ -1,0 +1,413 @@
+body
+    background-image: url(../images/Slide-Topo.png)
+    background-position: top center
+    background-attachment: fixed
+    background-repeat: no-repeat
+    background-color: black
+    background-size: cover
+    overflow-x: hidden
+    .menu-fixo
+        @media screen and (max-height: 700px), screen and (max-width: 992px)
+            .links
+                display: none
+            
+        display: block
+        height: 10vh
+        padding: 20px
+        .logo
+            float: left
+            width: 170px
+            height: 36px
+        .lista-item
+            display: none
+        .links
+            float: right
+            nav
+                display: inline-block
+                ul
+                    li
+                        list-style: none
+                        display: inline-block
+                        margin: 0 20px 0 0
+                        padding: 5px
+                        border: 2px solid transparent
+                        &.ativo
+                            border: 2px solid white
+                        a
+                            color: white
+                            text-transform: uppercase
+                            font-size: 1.8rem
+                            &:hover
+                                border-bottom: 1px solid white
+            ul
+                &.social
+                    display: inline-block
+                    padding-left: 0
+                    li
+                        display: inline-block
+                        margin: 0 5px 0 0
+                        a
+                            color: white
+                            display: block
+                            border: 1px solid white
+                            padding: 4px
+                            width: 25px
+                            height: 25px
+                            line-height: 16px
+                            text-align: center
+                            border-radius: 120px
+    section
+        display: none
+        @media screen and (max-height: 700px), screen and (max-width: 992px)
+            &.ativo
+                display: block
+                animation: none !importante
+        &.ativo
+            display: block
+            animation: mudar 1s
+        &.header
+            .container
+                z-index: 0
+            /*background-position-y: -100px;*/
+            @media screen and (max-height: 700px), screen and (max-width: 992px)
+                min-height: 70vh !important
+            min-height: 70vh
+            position: relative
+            padding: 20px 0 0 0
+            /* &:after
+                content: ""
+                position: absolute
+                bottom: 0
+                display: block
+                width: 100%
+                height: 40px
+                background: linear-gradient(90deg,#00434d, #000) */
+
+            h1
+                clear: both
+                margin: 175px auto 0 auto !important
+                border: 3px solid white
+                padding: 20px
+                display: table
+                text-transform: uppercase
+                color: white
+            p
+                color: white
+                text-align: center
+                text-transform: uppercase
+        &.sobre
+            min-height: 70vh
+            @media screen and (max-height: 700px), screen and (max-width: 992px)
+                margin-top: -10vh
+                .flipcard
+                    margin-top: 0
+                    .foto
+                        display: table
+                        margin: 30px auto
+                        position: relative
+                        .front
+                            position: relative
+                        .back
+                            display: none
+                .sobre-mim
+                    margin: 0
+                .tecnico
+                    .habilidades
+                        display: inline-block
+                        width: 30% !important
+                        margin: 0 !important
+                        padding: 0 30px !important
+                        .icon
+                            font-size: 3rem
+                            &-image
+                                opacity: 1
+                        .icon-name
+                            p
+                                color: white
+                                font-weight: 900 !important
+
+            .flipcard
+                @include make-md-column(4)
+                position: relative
+                margin-top: 50px
+                &.v
+                    &:hover .front, &.flip .front
+                        transform: rotateY(180deg)
+                    &:hover .back, &.flip .back
+                        transform: rotateY(0deg)
+                    .back
+                        transform: rotateY(-180deg)
+                &.h
+                    &:hover .front, &.flip .front
+                        transform: rotateX(180deg)
+                    &:hover .back, &.flip .back
+                        transform: rotateX(0deg)
+                    .back
+                        transform: rotateX(-180deg)
+                .front
+                    position: absolute
+                    transition: all 0.5s ease-in
+                    backface-visibility: hidden
+                .back
+                    position: absolute
+                    transition: all 0.5s ease-in
+                    backface-visibility: hidden
+                .front img, .back img
+                    border-radius: 200px
+                    width: 200px
+                    height: 200px
+                    object-fit: cover
+            /* .itens
+                @include make-md-column(4)
+                display: -webkit-box
+                display: -webkit-flex
+                display: -moz-flex
+                display: -ms-flexbox
+                display: flex
+                align-items: center
+                justify-content: space-around
+                margin: 50px 0
+                [class^="icone-"]
+                    width: 80px
+                    height: 80px
+                    background-color: #00434d
+                    color: white
+                    border-radius: 120px
+                    text-align: center
+                    line-height: 80px
+                    font-size: 20px
+                .icone-lapis
+                    -webkit-order: 1
+                .icone-codigo
+                    -webkit-order: 3
+                .imagem
+                    -webkit-order: 2
+                    img
+                        border-radius: 100px
+                        width: 200px
+                        height: 200px
+                        object-fit: cover
+                        background-color: transparent */
+            .sobre-mim
+                @include make-sm-column(12)
+                @include make-md-column(8)
+                color: white
+                margin: 60px 0 10px
+                line-height: 2
+                .textos
+                    .text-titulo
+                        margin-bottom: 15px
+                        font-size: 2.2rem
+                        text-align: center
+                        color: white
+                        font-weight: 900
+                    p
+                        color: white
+                        text-align: justify
+                        font-size: 1.8rem
+                    a
+                        display: table
+                        margin: 50px auto 0
+            .tecnico
+                @include make-md-column(12)
+                margin-top: 10px
+                .habilidades
+                    margin: 0 5px
+                    display: inline-block
+                    width: 15%
+                    text-align: center
+                    padding: 5px
+                    .icon
+                        font-size: 4rem
+                        img
+                            width: 32px
+                            height: 32px 
+                        .html5
+                            color: darken(#e67e22, 20%)
+                            &:hover
+                                color: #e67e22
+                        .css3
+                            color: lighten(#2980b9, 20%)
+                            &:hover
+                                color: #2980b9
+                        .aspnet
+                            color: darken(#8e44ad,20%)
+                            &:hover
+                                color: #8e44ad
+                        .git
+                            color: lighten(#000, 10%)
+                            &:hover
+                                color: #000
+                        .js
+                            color: lighten(yellow, 10%)
+                            &:hover
+                                color: yellow
+                    .icon-name
+                        p
+                            color: white
+                    .barra
+                            background-color: darken(#ecf0f1, 20%)
+                            border-radius: 120px
+                            display: block
+                            width: 100%
+                            height: 17px
+                            margin: 10px 0
+                            span
+                                display: block
+                                height: 100%
+                                border-radius: 120px
+                                background: linear-gradient(90deg, #2980b9, #2ecc71)
+                                p
+                                    font-weight: 700
+                                &.habilidade-1
+                                    width: 10%
+                                &.habilidade-2
+                                    width: 20%
+                                &.habilidade-3
+                                    width: 30%
+                                &.habilidade-4
+                                    width: 40%
+                                &.habilidade-5
+                                    width: 50%
+                                &.habilidade-6
+                                    width: 60%
+                                &.habilidade-7
+                                    width: 70%
+                                &.habilidade-8
+                                    width: 80%
+                                &.habilidade-9
+                                    width: 90%
+                                &.habilidade-10
+                                    width: 100%
+        &.meus-trabalhos
+            @media screen and (max-height: 700px), screen and (max-width: 992px)
+                margin-top: -10vh
+                .card
+                    width: 40% !important
+            min-height: 70vh
+            .titulo
+                h1
+                    text-align: center
+                    letter-spacing: 5px
+                    margin-top: 15px !important
+                    border: none !important
+            p
+                text-align: center
+                color: white
+                font-size: 1.8rem
+                line-height: 1
+            .card
+                margin: 15px 27px 0
+                display: inline-block
+                box-shadow: 0 4px 8px 0 rgba(255,255,255,0.6)
+                transition: 0.3s
+                width: 20%
+                background-color: white
+                color: black
+                padding: 2px 16px
+                &-title
+                    text-align: center
+                    padding: 2px 16px
+                &-info
+                    padding: 20px 16px
+                    margin-bottom: 5px
+                    text-align: justify
+        &.contato  
+            @media screen and (max-height: 800px), screen and (max-width: 992px)
+                margin-top: -10vh
+            min-height: 70vh
+            .tire-duvidas
+                @include make-md-column(4)
+                position: relative
+                margin: 110px auto 0px
+                text-align: center
+                img
+                    width: 256px
+                    height: 256px
+                p
+                    color: white
+                    font-size: 2rem
+            .formulario
+                @include make-md-column(8)
+                color: white
+                h1
+                    text-align: center
+                form
+                    margin-top: 45px
+                    .form-input, form-text
+                        height: 45px
+                        margin: 10px 0
+                    textarea
+                        height: 150px
+                    .form-control
+                        width: 100%
+                        height: 100%
+                        color: black
+                        border-radius: 5px
+                        padding-left: 10px
+                        border: none
+                        &:focus
+                            border: 2px solid green
+                    .form-button
+                        margin: 20px auto
+                        display: table
+                        button
+                            background-color: transparent
+                            border: 2px solid white
+            .form-result
+                display: table
+                margin: 20px auto
+                text-align: center
+                width: 100%
+                .sucesso
+                    background-color: darken(green, 15%)
+                    width: 100%
+                .error
+                    background-color: darken(red, 15%)
+                p
+                    display: inline-block
+                    margin: 10px 0
+                    text-transform: uppercase
+                i
+                    margin-left: 10px
+    .footer
+        @media screen and (max-height: 800px), screen and (max-width: 992px)
+            position: relative
+            margin-top: 20px
+            text-align: center
+            .logo-rodape
+                top: 0
+                bottom: 0
+                margin: auto
+                position: absolute
+                left: 0
+                right: 0
+        background: linear-gradient(0deg, #00434d, transparent)
+        padding: 0px
+        position: fixed
+        bottom: 0
+        right: 0
+        left: 0
+        .logo-rodape
+            margin: 35px auto
+            p
+                margin: 0
+                color: white
+                line-height: 1
+                text-align: center
+                &:nth-child(1)
+                    font-size: 4rem
+                    font-weight: bold
+                
+@keyframes mudar
+    0%
+        margin-left: 100%
+    100%
+        margin-left: 0%     
+    
+@keyframes subir
+    0%
+        top: 0
+        margin-top: 100%
+    100%
+        margin-top: 0%  

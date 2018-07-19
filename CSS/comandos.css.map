@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAI,CACA,MAAM,CAAE,CAAC,CACT,GAAG,CAAE,CAAC,CACV,CAAC,CACG,KAAK,CAAE,GAAG,CACV,gBAAgB,CAAE,IAAM,CACxB,SAAS,CAAE,IAAI,CACf,UAAU,CAAE,MAAM",
+"sources": ["../sass/comandos.sass"],
+"names": [],
+"file": "comandos.css"
+}
